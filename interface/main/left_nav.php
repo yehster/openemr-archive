@@ -396,10 +396,10 @@ function genFindBlock() {
    if (fnum == 1) f.cb_bot.checked = true;
    else f.cb_top.checked = true;
   }
-  var rows = f.cb_top.checked ? '*' :  '0';
-  rows += f.cb_bot.checked ? ',*' : ',0';
-  fset.rows = rows;
-  fset.rows = rows;
+  var cols = f.cb_top.checked ? '*' :  '0';
+  cols += f.cb_bot.checked ? ',*' : ',0';
+  fset.cols = cols;
+  fset.cols = cols;
  }
 
  // Load the specified url into the specified frame (RTop or RBot).
@@ -943,8 +943,8 @@ if ($GLOBALS['athletic_team']) {
 <center>
 <select name='sel_frame' style='background-color:transparent;font-size:9pt;width:<?php echo $GLOBALS['athletic_team'] ? 47 : 100; ?>%;'>
  <option value='0'><?php xl('Default','e'); ?></option>
- <option value='1'><?php xl('Top','e'); ?></option>
- <option value='2'><?php xl('Bottom','e'); ?></option>
+ <option value='1'><?php xl('Left','e'); ?></option>
+ <option value='2'><?php xl('Right','e'); ?></option>
 </select>
 <?php if ($GLOBALS['athletic_team']) genPopupsList('width:47%'); ?>
 </center>
@@ -953,10 +953,10 @@ if ($GLOBALS['athletic_team']) {
  <tr>
   <td class='smalltext' nowrap>
    <input type='checkbox' name='cb_top' onclick='toggleFrame(1)' checked />
-   <b><?php xl('Top','e') ?></b>
+   <b><?php xl('Left','e') ?></b>
   </td>
   <td class='smalltext' align='right' nowrap>
-   <b><?php xl('Bot','e') ?></b>
+   <b><?php xl('Right','e') ?></b>
    <input type='checkbox' name='cb_bot' onclick='toggleFrame(2)' <?php if (empty($GLOBALS['athletic_team'])) echo 'checked '; ?>/>
   </td>
  </tr>
