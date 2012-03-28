@@ -1,0 +1,131 @@
+/* 
+    Document   : main_screen_tab
+    Created on : Feb 23, 2012, 12:19:05 AM
+    Author     : yehster
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+div
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+iframe
+{
+    width:100%;
+    height:100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+iframe.main
+{
+    width:100%;
+    overflow: auto;
+    float: left;
+    height: 100%;
+}
+
+#divHeader
+{
+    height:4em;
+}
+
+#divTabs
+{
+    height:1em;
+}
+#divBottom
+{
+    float:left;
+    width:100%;
+}
+#multiTabs{
+    float: right;
+}
+#divNav
+{
+    width: 150px;
+    height: 100%;
+    clear: left;
+    float: left;
+}
+#divMain
+{
+    position:relative;
+    overflow: auto;
+    height: 100%;
+}
+
+#divMain div.main
+{
+    height: 100%;
+    float:left;
+    width: 100%;
+}
+
+#divMain div.main iframe.main
+{
+    height: 100%;
+}
+#tabList
+{
+    float:left;
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+    border: 0px;
+    padding-left: 150px;
+}
+#tabList li
+{
+    display: inline;
+    border: 1px black solid;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    cursor: pointer;
+}
+#tabList li.selected
+{
+    background-color: white;
+    border-bottom: 0px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+#navButtons
+{
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+#navButtons > span
+{
+    border-top: 1px black;
+    border-left: 1px black;
+    border-right: 1px black;
+    font-weight: bold;
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+    background:	skyblue;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#navButtons > span.active
+{
+    background: blue;
+    color: yellow;
+}

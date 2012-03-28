@@ -1,0 +1,27 @@
+/* 
+    Document   : iconic
+    Created on : Mar 29, 2012, 4:40:37 PM
+    Author     : yehster
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+    font-family: iconic;
+    src: url(/openemr/interface/themes/iconic/iconic_stroke.otf);
+    font-weight:100;
+}
+
+.iconic
+{
+    display: inline-block;
+    font-family: iconic;
+    width: 1.5em;
+    text-align: center;
+}
+.body_nav
+{
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
