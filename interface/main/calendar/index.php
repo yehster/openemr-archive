@@ -76,7 +76,7 @@ if ($GLOBALS['set_facility_cookie'] && ($_SESSION['pc_facility'] > 0)) setcookie
 // Simplifying by just using request variable instead of checking for both post and get - KHY
 if (isset($_REQUEST['viewtype'])) $_SESSION['viewtype'] = $_REQUEST['viewtype'];
 
-
+session_write_close();
 
 
 //if (empty($_GET['no_nav'])) {

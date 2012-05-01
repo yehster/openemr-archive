@@ -1,6 +1,6 @@
 <?php
 include_once("../globals.php");
-
+session_write_close();
 if ($GLOBALS['full_new_patient_form']) {
   require("new_comprehensive.php");
   exit;

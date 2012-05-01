@@ -23,6 +23,7 @@ require_once("$srcdir/formdata.inc.php");
 require_once("$srcdir/classes/Document.class.php");
 require_once("$srcdir/gprelations.inc.php");
 require_once("$srcdir/formatting.inc.php");
+session_write_close();
 ?>
 <html>
 <head>

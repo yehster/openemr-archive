@@ -13,6 +13,7 @@ $fake_register_globals=false;
 //
 
  require_once("../../globals.php");
+ session_write_close();
  require_once("$srcdir/pnotes.inc");
  require_once("$srcdir/acl.inc");
  require_once("$srcdir/patient.inc");

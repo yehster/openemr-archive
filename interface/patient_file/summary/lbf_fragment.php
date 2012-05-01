@@ -25,6 +25,7 @@ $sanitize_all_escapes = true;
 $fake_register_globals = false;
 
 require_once("../../globals.php");
+session_write_close();
 require_once("$srcdir/formatting.inc.php");
 
 $lbf_form_id = $_GET['formname'];

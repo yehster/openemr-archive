@@ -15,7 +15,7 @@
  $GLOBALS['DAEMON_FLAG'] = true;
 
  include_once("../globals.php");
-
+ session_write_close();
  $daemon_interval = 120; // Interval in seconds between reloads.
  $colorh = '#ff0000';    // highlight color
  $colorn = '#000000';    // normal color

@@ -26,6 +26,7 @@ $fake_register_globals=false;
 //
 
 require_once("../../globals.php");
+session_write_close();
 require_once("$srcdir/sql.inc");
 
 ?>
