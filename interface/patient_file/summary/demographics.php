@@ -553,6 +553,7 @@ if ($GLOBALS['patient_id_category_name']) {
 |
 <a href="stats_full.php?active=all" onclick='top.restoreSession()'>
 <?php echo htmlspecialchars(xl('Issues'),ENT_NOQUOTES); ?></a>
+|<?php $_REQUEST['patientID']=$_SESSION['pid']; require_once("$srcdir/doctrine/ui/Widgets/PatientEvents/PatientEventsWidget.php"); ?>
   </td>
  </tr>
 </table> <!-- end header -->
@@ -564,6 +565,7 @@ if ($GLOBALS['patient_id_category_name']) {
     <!-- start left column div -->
     <div style='float:left; margin-right:20px'>
      <table cellspacing=0 cellpadding=0>
+         <?php include_once("/var/www/openemr/library/doctrine/ui/Integration/DoctrineForDemographics.php"); ?>
       <tr<?php if ($GLOBALS['athletic_team']) echo " style='display:none;'"; ?>>
        <td>
 <?php

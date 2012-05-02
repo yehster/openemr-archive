@@ -165,6 +165,26 @@ foreach ($ISSUE_TYPES as $key => $arr) {
             </td>
             </tr>
         <?php }
+        if($key=="medication")
+        {
+            require_once("/var/www/openemr/library/doctrine/init-em.php");
+            require_once("$doctrineroot/ui/Widgets/MedicationWidgetUtil.php");
+            echoDoctrineMeds();
+	    if ($_POST['embeddedScreen']) {
+	    echo "</div></td></tr>";
+            }
+            continue;
+        }
+        elseif($key=="allergy")
+        {
+            require_once("/var/www/openemr/library/doctrine/init-em.php");
+            require_once("$doctrineroot/ui/Widgets/AllergiesWidgetUtil.php");
+            echoDoctrineAllergies();
+	    if ($_POST['embeddedScreen']) {
+	    echo "</div></td></tr>";
+            }
+            continue;
+        }        
         echo "<table>";    
 	if (sqlNumRows($pres) == 0) {
           if ( getListTouch($pid,$key) ) {
