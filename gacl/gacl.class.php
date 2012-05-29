@@ -492,12 +492,12 @@ class gacl {
 			}
 
                         if ($return_all) {
-                                while ($arr =& $rs->fetchRow()) {
+                                while ($arr = $rs->FetchRow()) {
                                         $row[] = $arr;
                                 }
                         }
                         else {
-			        $row =& $rs->FetchRow();
+			        $row = $rs->FetchRow();
                         }
 
 
