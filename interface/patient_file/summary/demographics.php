@@ -396,8 +396,8 @@ $(document).ready(function(){
 //
 function setMyPatient() {
 <?php if ($GLOBALS['concurrent_layout']) { ?>
- // Avoid race conditions with loading of the left_nav or Title frame.
- if (!parent.allFramesLoaded()) {
+ // Avoid race conditions with loading of the left_nav frame.
+ if (!parent.left_nav.setPatient) {
   setTimeout("setMyPatient()", 500);
   return;
  }
