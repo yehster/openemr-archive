@@ -2,6 +2,7 @@
 
 // require_once("{$GLOBALS['srcdir']}/sql.inc");
 require_once(dirname(__FILE__) . "/sql.inc");
+error_reporting(E_ALL & ~E_NOTICE);
 
 function getBillingById ($id, $cols = "*")
 {

@@ -33,7 +33,7 @@
 require_once("formdata.inc.php");
 require_once("formatting.inc.php");
 require_once("user.inc");
-
+error_reporting(E_ALL & ~E_NOTICE);
 $date_init = "";
 
 function get_pharmacies() {
