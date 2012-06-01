@@ -345,8 +345,9 @@ function pnInit()
     }
 
     // ADODB configuration
-    define('ADODB_DIR', 'pnadodb');
-    require 'pnadodb/adodb.inc.php';
+    $gSrcdir=$GLOBALS['srcdir'];
+    define('ADODB_DIR', "$gSrcdir/adodb");
+    require "$gSrcdir/adodb/adodb.inc.php";
 
     // Temporary fix for hacking the hlpfile global
     // TODO - remove with pre-0.71 code
