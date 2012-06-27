@@ -424,4 +424,5 @@ if (version_compare(phpversion(), "5.2.1", ">=")) {
 ini_set("session.bug_compat_warn","off");
 
 //////////////////////////////////////////////////////////////////
+require_once($webserver_root."/symfony/registerSymfonySession.php");
 ?>
