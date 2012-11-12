@@ -1510,10 +1510,15 @@ function deleteEvent() {
 function SubmitForm() {
   var f = document.forms[0];
   if (f.form_action.value != 'delete') {
+    // Skip the availablity check and just submit the form
+    // 
+    top.restoreSession();
+    f.submit();
+// 
     // Check slot availability.
-    var mins = parseInt(f.form_hour.value) * 60 + parseInt(f.form_minute.value);
-    if (f.form_ampm.value == '2' && mins < 720) mins += 720;
-    find_available('&cktime=' + mins);
+//    var mins = parseInt(f.form_hour.value) * 60 + parseInt(f.form_minute.value);
+//    if (f.form_ampm.value == '2' && mins < 720) mins += 720;
+//    find_available('&cktime=' + mins);
   }
   else {
     top.restoreSession();
