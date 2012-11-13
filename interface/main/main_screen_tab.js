@@ -2,7 +2,7 @@ var frameProxies={};
 function goPid(pid)
 {
     top.restoreSession();
-    top.RTop.location = pathWebroot+'/patient_file/summary/demographics.php' + '?set_pid=' + pid; 
+    top.RTop.location = pathWebroot+'patient_file/summary/demographics.php' + '?set_pid=' + pid; 
     top.confirmFrameVisible(top.frameProxies["patient"]);                
 }
 function updateFrameInfo()
