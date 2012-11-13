@@ -37,7 +37,6 @@ function updateFrameInfo()
             if(subFrames.length==1) {
             subFrameName=subFrames[0].name;
             $(this).attr("src",subFrames[0].location.href);
-            parent[subFrameName]=proxy.frame;                                        
             }
             else
                 {
@@ -60,6 +59,7 @@ function updateFrameInfo()
         proxy.displayControl.find(".label").text(titleText);    
     }
     registerSwipe($("body",proxy.frame.document));
+    $(proxy.frame.document).ready(function(){$("a[target='_parent']",proxy.frame.document).removeAttr("target")});
 }
 function syncCBVisibility(idx,elem)
 {
