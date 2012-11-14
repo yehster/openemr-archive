@@ -1249,6 +1249,9 @@ if (true) {
 <script language='JavaScript'>
 <?php echo $justinit; ?>
 </script>
-
+<script>var webroot="<?php echo $web_root;?>";var pid=<?php echo $pid;?>;var enc=<?php echo $encounter;?>;</script>
+<script type="text/javascript" src="<?php echo $web_root;?>/library/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="<?php echo $web_root;?>/interface/forms/fee_sheet/review/fee_sheet_review.js"></script>
+<link rel="stylesheet" href="<?php echo $web_root;?>/interface/forms/fee_sheet/review/fee_sheet_review.css" type="text/css">
 </body>
 </html>
