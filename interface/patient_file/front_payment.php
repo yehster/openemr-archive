@@ -610,18 +610,6 @@ function coloring()
 	   }
 	}
  }
-function CheckVisible(MakeBlank)
- {//Displays and hides the check number text box.
-   if(document.getElementById('form_method').options[document.getElementById('form_method').selectedIndex].value=='check_payment' ||
-   	  document.getElementById('form_method').options[document.getElementById('form_method').selectedIndex].value=='bank_draft'  )
-   {
-	document.getElementById('check_number').disabled=false;
-   }
-   else
-   {
-	document.getElementById('check_number').disabled=true;
-   }
- }
 function validate()
  {
   var f = document.forms[0];
@@ -934,7 +922,7 @@ function make_insurance()
    <?php echo xlt('Payment Method'); ?>:
   </td>
   <td colspan='2' >
-  <select name="form_method" id="form_method"  class="text" onChange='CheckVisible("yes")'>
+  <select name="form_method" id="form_method"  class="text">
   <?php
   $query1112 = "SELECT * FROM list_options where list_id=?  ORDER BY seq, title ";
   $bres1112 = sqlStatement($query1112,array('payment_method'));
