@@ -1,0 +1,17 @@
+/* 
+    Document   : dynamic_finder
+    Created on : Dec 7, 2012, 6:09:38 PM
+    Author     : yehster
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#pt_table
+{
+    cursor: pointer;
+}
+
+#pt_table tbody tr >td:first-child:hover
+{
+    background-color: yellow;
+}
