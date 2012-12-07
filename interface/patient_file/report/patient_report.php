@@ -130,10 +130,6 @@ function show_date_fun(){
 
 <span class='title'><?php xl('Patient Report','e'); ?></span>&nbsp;&nbsp;
 
-<!--
-<a class="link_submit" href="full_report.php" onclick="top.restoreSession()">
-[<?php xl('View Comprehensive Patient Report','e'); ?>]</a>
--->
 <a class="link_submit" href="#" onclick="return checkAll(true)"><?php xl('Check All','e'); ?></a>
 |
 <a class="link_submit" href="#" onclick="return checkAll(false)"><?php xl('Clear All','e'); ?></a>
